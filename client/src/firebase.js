@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCXnwELG_Li8bKRadepkcUcn3nW36y0WXo",
-  authDomain: "mern-ecommerce-9bf0d.firebaseapp.com",
-  projectId: "mern-ecommerce-9bf0d",
-  storageBucket: "mern-ecommerce-9bf0d.appspot.com",
-  messagingSenderId: "74417385688",
-  appId: "1:74417385688:web:6d0a870be7db58126a67ad",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 // Initialize Firebase

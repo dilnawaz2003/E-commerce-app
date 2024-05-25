@@ -40,8 +40,6 @@ const Search = () => {
     refetch({ page, category, sort, search, price });
   }, [page, category, search, sort, price]);
 
-  console.log(productsData);
-
   const moveBackHandler = () => {
     if (page > 1) setPage((prevPage) => prevPage - 1);
   };
